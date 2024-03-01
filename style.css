@@ -1,0 +1,115 @@
+/*TABS*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: linear-gradient(-0.125turn, #2383c7 0%, #0a64a3 100%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.wrapper {
+  height: 100%;
+  color: #413b0e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: white;
+  -webkit-box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.5);
+  width: 282px;
+  height: 380px;
+  position: relative;
+  margin: 1rem;
+}
+
+svg {
+  position: relative;
+  width: 230px;
+  height: 230px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+svg circle {
+  fill: none;
+  stroke: #000;
+  stroke-width: 15;
+  stroke-opacity: 0.15;
+  stroke-linecap: round;
+}
+
+svg circle:last-of-type {
+  stroke: #e4b063;
+  stroke-dasharray: 630px;
+  stroke-dashoffset: calc(630 - (630 * (var(--percent)) / 100));
+  stroke-opacity: 1;
+}
+
+.percent {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  position: relative;
+}
+
+.percent .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.percent .number h3 {
+  font-weight: 500;
+  font-size: 5rem;
+  letter-spacing: .1rem;
+}
+
+.percent .number h3 span {
+  font-size: 3rem;
+}
+
+.card.red svg circle:last-of-type {
+  stroke: #b81313;
+}
+
+.card.green svg circle:last-of-type {
+  stroke: #13b81b;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    height: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
